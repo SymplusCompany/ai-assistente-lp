@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { TextGenerateEffectExample } from "@/components/ui/textGenerateEffect";
+import { TextGenerateEffect } from "@/components/ui/textGenerateEffect";
 import { BackgroundBeams } from "@/components/ui/background-beams";
 import { useToast } from "@/hooks/use-toast";
 import { Overpass_Mono } from "next/font/google";
@@ -79,18 +79,18 @@ export default function Home() {
             <span className="text-blue-500">IA</span> PARA NEGÓCIOS
           </h1>
           <div className="flex flex-col gap-1">
-            <p className="text-xl leading-4 text-center mx-auto font-light">
-              <TextGenerateEffectExample
+            <div className="text-xl leading-4 text-center mx-auto font-light">
+              <TextGenerateEffect
                 text="Aumente suas conversões e melhore o atendimento ao cliente 24/7 com agentes de IA"
                 duration={0.3}
               />
-            </p>
-            <p className="text-xl leading-4 text-center w-[70%] mx-auto font-light">
-              <TextGenerateEffectExample
+            </div>
+            <div className="text-xl leading-4 text-center w-[70%] mx-auto font-light">
+              <TextGenerateEffect
                 text="Que entendem e interagem como humanos."
                 duration={0.5}
               />
-            </p>
+            </div>
           </div>
 
           <div className="flex flex-col items-center justify-center mt-6">

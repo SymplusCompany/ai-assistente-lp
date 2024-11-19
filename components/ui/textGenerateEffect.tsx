@@ -1,27 +1,28 @@
 // @NOTE: in case you are using Next.js
-"use client"
+"use client";
 
-import { cn } from "@/lib/utils"
-import { motion } from "framer-motion"
+import { cn } from "@/lib/utils";
+import { motion } from "framer-motion";
 
-type TextGenerateEffectExampleProps = {
-  text: string
-  duration?: number
-}
+//#region exemple
+// type TextGenerateEffectExampleProps = {
+//   text: string;
+//   duration?: number;
+// };
 
-export function TextGenerateEffectExample({
-  text,
-  duration,
-}: TextGenerateEffectExampleProps) {
-  //   const text = `This is a text generate effect component.`
-  return <TextGenerateEffect text={text} preset="char" duration={duration} />
-}
+// export function TextGenerateEffectExample({
+//   text,
+//   duration,
+// }: TextGenerateEffectExampleProps) {
+//   //   const text = `This is a text generate effect component.`
+//   return <TextGenerateEffect text={text} preset="char" duration={duration} />;
+// }
 
 type TextGenerateEffectProps = {
-  text: string
-  duration?: number
-  preset?: "char" | "word"
-} & React.ComponentProps<"span">
+  text: string;
+  duration?: number;
+  preset?: "char" | "word";
+} & React.ComponentProps<"span">;
 
 export function TextGenerateEffect({
   text,
@@ -78,5 +79,5 @@ export function TextGenerateEffect({
             </motion.span>
           ))}
     </motion.div>
-  )
+  );
 }
