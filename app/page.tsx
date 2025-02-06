@@ -59,7 +59,7 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col select-none">
+    <div className="min-h-screen flex flex-col select-none h-screen">
       <header className="w-full sm:w-[65%] mx-auto mt-8 flex justify-between items-center px-4">
         <Image src="/logo.svg" alt="logo" width={150} height={150} />
         <Button asChild>
